@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>用户注册</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>用户注册</h1>
+    <form action="/users/signup" method="post">
+        <!--input必须指定name属性，否则无法传递参数-->
+        <div><label>用户名</label><input type="text" name="username"></div>
+        <div><label>密码</label><input type="password" name="password"></div>
+        <div><label>email</label><input type="email"  name="email"></div>
+        <button type="submit">提交</button>
+    </form>
+  </body>
+</html>
